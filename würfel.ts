@@ -1,4 +1,4 @@
-export class Dice {
+export class Würfel {
     number: number = 0;
 
     public roll(): number {

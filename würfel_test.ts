@@ -1,17 +1,17 @@
 import { assertEquals } from "@std/assert";
-import { Dice } from "./dice.ts";
+import { Würfel } from "./würfel.ts";
 
-Deno.test("Dice: number from 1 - 6",() => {
-    const value = new Dice();
+Deno.test("Würfel: Zahl von 1 - 6",() => {
+    const value = new Würfel();
 
     value.roll();
 
     assertEquals(value.number >= 1 && value.number <= 6, true);
 });
 
-Deno.test("Dice: number from 2 - 12",() => {
-    const value1 = new Dice();
-    const value2 = new Dice();
+Deno.test("Würfel: Zahl von 2 - 12",() => {
+    const value1 = new Würfel();
+    const value2 = new Würfel();
 
     value1.roll();
     value2.roll();
