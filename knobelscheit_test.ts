@@ -13,7 +13,7 @@ Deno.test("Knobelscheit: prüft Zahl 5 ist vorhanden",() => {
     assertEquals(k.istOffen(5), true);
 });
 
-Deno.test("Knobelscheit: prüft Zahl 5 ist vorhanden",() => {
+Deno.test("Knobelscheit: nimmt Zahl 5 raus",() => {
     const k = new Knobelscheit();
 
     k.rausnehmen(5);
